@@ -1,23 +1,28 @@
 {
-  "name": "typedoc-custom-theme-demo",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "repository": "git@github.com:Gerrit0/typedoc-custom-theme-demo.git",
-  "author": "Gerrit Birkeland <gerrit@gerritbirkeland.com>",
-  "license": "MIT",
-  "keywords": [
-    "typedoc-theme"
-  ],
-  "devDependencies": {
-    "typedoc": "^0.22.9",
-    "typescript": "^4.4.4"
-  },
-  "peerDependencies": {
-    "typedoc": "^0.22.9"
-  },
-  "scripts": {
-    "build": "tsc",
-    "predocs": "tsc",
-    "docs": "typedoc src --plugin dist/index.js"
-  }
+    "name": "typedoc-theme-natuna",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "repository": "git@github.com:natunaorg/typedoc-theme-natuna.git",
+    "author": {
+        "email": "me@raflymaulana.me",
+        "name": "Rafly Maulana",
+        "url": "https://raflymaulana.me"
+    },
+    "license": "MIT",
+    "keywords": [
+        "typedoc-theme"
+    ],
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "typescript": "^4.4.4",
+        "typedoc": "^0.22.12"
+    },
+    "peerDependencies": {
+        "typedoc": "^0.22.12"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "docs": "typedoc src --plugin dist/index.js"
+    }
 }
