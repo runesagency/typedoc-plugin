@@ -220,7 +220,7 @@ export class CustomThemeElement extends DefaultThemeRenderContext {
                                         throw new Error(`Custom navigation link must start with "/", or a protocol such as "https://", but got "${link}"`);
                                     }
 
-                                    if (link.match(/^([a-zA-Z]+:\/\/)/g)) {
+                                    if (link.match(/^[a-zA-Z]+:\/\//)) {
                                         href = link;
                                     } else {
                                         link = link.substring(1);
