@@ -215,8 +215,8 @@ export class CustomThemeElement extends DefaultThemeRenderContext {
                                 {navigation.links.map((links) => {
                                     let link = links.href;
 
-                                    if (!link.startsWith("/")) {
-                                        throw new Error(`Custom navigation link must start with "/", but got "${link}"`);
+                                    if (!link.match(/^([a-zA-Z]+:\/\/|\/)/)) {
+                                        throw new Error(`Custom navigation link must start with "/", or a protocol such as "https://", but got "${link}"`);
                                     }
 
                                     link = link.substring(1);

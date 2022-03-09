@@ -1,7 +1,7 @@
 {
     "name": "@natunaorg/typedoc-plugin",
     "description": "Custom Typedoc plugin for Natuna (Supports version 0.22+).",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "dist/index.js",
     "repository": {
         "url": "git://github.com/natunaorg/typedoc-plugin.git",
