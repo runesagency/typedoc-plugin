@@ -214,15 +214,20 @@ export class CustomThemeElement extends DefaultThemeRenderContext {
                             <ul>
                                 {navigation.links.map((links) => {
                                     let link = links.href;
+                                    let href = "";
 
                                     if (!link.match(/^([a-zA-Z]+:\/\/|\/)/)) {
                                         throw new Error(`Custom navigation link must start with "/", or a protocol such as "https://", but got "${link}"`);
                                     }
 
-                                    link = link.substring(1);
-                                    const out = this.options.getValue("out");
-                                    const root = path.relative(path.dirname(props.filename), out);
-                                    const href = path.posix.join(root, link);
+                                    if (link.match(/^([a-zA-Z]+:\/\/)/g)) {
+                                        href = link;
+                                    } else {
+                                        link = link.substring(1);
+                                        const out = this.options.getValue("out");
+                                        const root = path.relative(path.dirname(props.filename), out);
+                                        href = path.posix.join(root, link);
+                                    }
 
                                     return (
                                         <li>
