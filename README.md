@@ -1,4 +1,4 @@
-# @natunaorg/typedoc-plugin 
+# @wearerunes/typedoc-plugin 
 Custom Typedoc plugin for Natuna (Supports version 0.22+).
 
 **In this plugin, you can:**

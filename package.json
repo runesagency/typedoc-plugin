@@ -1,21 +1,35 @@
 {
-    "name": "@natunaorg/typedoc-plugin",
+    "name": "@wearerunes/typedoc-plugin",
     "description": "Custom Typedoc plugin for Natuna (Supports version 0.22+).",
     "version": "1.0.4",
     "main": "dist/index.js",
     "repository": {
-        "url": "git://github.com/natunaorg/typedoc-plugin.git",
+        "url": "git://github.com/wearerunes/typedoc-plugin.git",
         "type": "git"
     },
     "private": false,
     "author": {
-        "email": "me@raflymaulana.me",
-        "name": "Rafly Maulana",
-        "url": "https://raflymaulana.me"
+        "email": "team@runes.asia",
+        "name": "Runes Team",
+        "url": "https://runes.asia"
     },
+    "maintainers": [
+        {
+            "email": "me@raflymaulana.me",
+            "name": "Rafly Maulana",
+            "url": "https://raflymaulana.me"
+        }
+    ],
     "license": "MIT",
     "keywords": [
-        "typedoc-theme"
+        "typedoc-theme",
+        "typedoc",
+        "typedoc-plugin",
+        "runes",
+        "natuna",
+        "runes.asia",
+        "documentation",
+        "menu"
     ],
     "files": [
         "/dist"
